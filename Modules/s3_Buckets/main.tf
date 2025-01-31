@@ -6,3 +6,12 @@ resource "aws_s3_bucket" "example" {
     }
   
 }
+
+
+resource "aws_s3_bucket" "example1" {
+  bucket = "demo-terraform-tharun"
+  
+}
+
+
+

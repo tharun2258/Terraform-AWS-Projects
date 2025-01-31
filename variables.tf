@@ -26,3 +26,14 @@ variable "bucket_env" {
   description = "environment of the s3 bucket"
 
 }
+
+variable "environment" {
+  type = string
+  
+}
+
+variable "project_name" {
+
+  type = string
+  
+}
