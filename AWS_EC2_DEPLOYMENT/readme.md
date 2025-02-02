@@ -1,4 +1,7 @@
 Terraform EC2 Instance Setup Guide
+
+
+
 This guide outlines the steps to create an EC2 instance on AWS using Terraform. It covers the necessary configuration files and resources required to provision the EC2 instance along with its network and security setup.
 
 Steps to Create an EC2 Instance:
