@@ -1,1 +1,0 @@
-{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"dynamodb_table","Source":"./Modules/dynamodb","Dir":"Modules/dynamodb"},{"Key":"ec2_instance","Source":"./Modules/Ec2_instances","Dir":"Modules/Ec2_instances"},{"Key":"s3_bucket","Source":"./Modules/s3_Buckets","Dir":"Modules/s3_Buckets"}]}
