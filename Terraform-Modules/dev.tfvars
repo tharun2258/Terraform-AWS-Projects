@@ -1,0 +1,7 @@
+ami           = "ami-05fa46471b02db0ce"
+instance_type = "t2.micro"
+key_name      = "ec2-new"
+bucket_name   = "dev-demo-s3-tharun"
+bucket_env    = "dev"
+environment = "dev"
+project_name = "dev-terraform-project"
