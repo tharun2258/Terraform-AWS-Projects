@@ -82,6 +82,31 @@ resource "aws_instance" "ec2_instance" {
     subnet_id = aws_subnet.subnet.id
     key_name = aws_key_pair.ec2_key_pair.key_name
     
+
+    connection {
+      user = "ec2-user"
+      type = "ssh"
+      private_key = file("path/.ssh/id_rsa")
+      host = self.public_ip
+    }
+   
+    
+    provisioner "file"{
+        source = "app.py"
+        destination = "/home/ec2-user/app.py"
+    }
+
+    provisioner "remote-exec"{
+        inline = [ 
+            "echo hello from the remote ec2 istance",
+            "python3 --version",
+            "sudo yum install python3-pip -y",
+            "pip3 --version",
+            "pwd",
+            "cd /home/ec2-user",
+            "pwd",
+            "pip3 install flask",
+            "python3 app.py",
+         ]
+    }
 }
-
-

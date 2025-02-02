@@ -36,6 +36,6 @@ variable "instance_type" {
 
 variable "key_name" {
     type = string
-    default = "C:/Users/Yamini K/.ssh/id_rsa.pub"
+    default = "path/.ssh/id_rsa.pub"
     description = "path of key name created"
 }
