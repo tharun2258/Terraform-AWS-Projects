@@ -7,6 +7,7 @@ resource "random_id" "random_id" {
 resource "aws_s3_bucket" "s3_bucket" {
 
     bucket = format("%s-%s" , var.bucket_name , random_id.random_id.hex)
+    
 
     tags = {
       Environment = var.bucket_env
@@ -22,9 +23,9 @@ resource "aws_s3_object" "s3_object" {
     etag = filemd5("${"./images"}/${each.value}")
     server_side_encryption = "AES256"
     content_type = "image/jpg"
-   
-  
+
 }
+
 
 
 resource "aws_s3_bucket_versioning" "s3_bucket_versioning" {
@@ -84,17 +85,6 @@ resource "aws_s3_bucket_policy" "read_access" {
     depends_on = [ aws_s3_bucket_public_access_block.public_access_enable ]
   
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 

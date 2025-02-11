@@ -1,0 +1,1 @@
+s3_bucket_name = "demo-iam-policy-tharun"
