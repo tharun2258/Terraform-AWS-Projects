@@ -6,4 +6,4 @@ iam_users = {
     
 }
 
-iam_groups = [ "developers" , "admins"]
+iam_groups = [ "developers-dev" , "admins-dev"]
