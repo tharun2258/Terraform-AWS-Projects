@@ -1,0 +1,6 @@
+availability_zone = "us-east-1a"
+instance_type = "t2.micro"
+ami_id = "ami-085ad6ae776d8f09c"
+key_name = "demo-ec2"
+s3_bucket_key_name = "AWS_S3_IMAGE.png"
+s3_bucket_source = "./images/AWS_S3_IMAGE.png"

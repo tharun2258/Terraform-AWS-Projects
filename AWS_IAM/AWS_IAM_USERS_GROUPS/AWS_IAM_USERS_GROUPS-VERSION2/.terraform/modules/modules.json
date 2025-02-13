@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"create_groups","Source":"./Modules/IAM_GROUPS","Dir":"Modules/IAM_GROUPS"},{"Key":"create_users","Source":"./Modules/IAM_USERS","Dir":"Modules/IAM_USERS"},{"Key":"user_group_membership","Source":"./Modules/IAM_USER_GROUPS_MEMBERSHIP","Dir":"Modules/IAM_USER_GROUPS_MEMBERSHIP"}]}
